@@ -12,22 +12,18 @@ const ControlButtons = () => {
 
   const handleDecrement = () => {
     dispatch(counterActions.decrement());
-
   };
   const handlePrivacyToggle = () => {
     dispatch({ type: "PRIVACY_TOGGLE" });
   };
 
   const handleAdd = () => {
-    dispatch({ type: "ADD", payload: { num: inputElement.current.value } });
+    dispatch(counterActions.add(inputElement.current.value));
     inputElement.current.value = "";
   };
 
   const handleSubtract = () => {
-    dispatch({
-      type: "SUBTRACT",
-      payload: { num: inputElement.current.value },
-    });
+    dispatch(counterActions.subtract(inputElement.current.value));
     inputElement.current.value = "";
   };
 

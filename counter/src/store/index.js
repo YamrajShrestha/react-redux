@@ -16,10 +16,10 @@ const counterSlice = createSlice({
       state.counterVal--;
     },
     add: (state, action) => {
-      console.log(state, action);
+      state.counterVal += Number(action.payload);
     },
     subtract: (state, action) => {
-      console.log(state, action);
+      state.counterVal -= Number(action.payload);
     },
   },
 });
