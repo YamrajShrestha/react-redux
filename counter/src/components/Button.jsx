@@ -29,6 +29,22 @@ const Button = () => {
           -1
         </button>
       </div>
+      <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mt-2">
+        <div className="input-group">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter a number"
+            aria-label="Recipient's username with two button addons"
+          />
+          <button className="btn btn-outline-primary" type="button">
+            Add
+          </button>
+          <button className="btn btn-outline-info" type="button">
+            Subtract
+          </button>
+        </div>
+      </div>
     </>
   );
 };
